@@ -100,7 +100,7 @@ public class ClientController
             mailMessage.setSubject("Complete Registration!");
             mailMessage.setFrom("valentinavelaga@gmail.com");
             mailMessage.setText("To confirm your account, please click here : "
-            +"http://localhost:2022/confirm-account?token="+confirmationToken.getConfirmationToken());
+            +"http://aaradhana.herokuapp.com//confirm-account?token="+confirmationToken.getConfirmationToken());
 
             es.sendEmail(mailMessage);
 
